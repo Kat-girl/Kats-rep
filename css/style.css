@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+form {
+  width: 450px;
+  border: 9px solid #ebebeb;
+  background-color: #f8f8f8;
+  color: #787878;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  line-height: 20px;
+}
+.label,
+.upper,
+button {
+  text-transform: uppercase;
+}
+input {
+  display: none;
+}
+label:hover {
+  cursor: pointer;
+}
+
+/* radio buttons style */
+.rating-container {
+  position: relative;
+}
+.radio {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.007);
+  border: 4px solid #ebebeb;
+  top: 8px;
+  left: 20px;
+}
+
+/* radio buttons changes style */
+.input:checked ~ .plan {
+  border: 1px solid#9fdaf0;
+  background-color: #ebf4f7;
+}
+.input:checked ~ .radio {
+  border: 4px solid#34648E;
+}
+.input:checked ~ .blue-circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0294bf;
+  top: 16px;
+  left: 28px;
+}
+
+.label {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  padding-left: 50px;
+}
+.plan {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.number {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding: 15px;
+}
+select {
+  border-color: #9ec0f7;
+  border-radius: 3px;
+}
+select:active,
+select:focus {
+  border: 2px solid #9ec0f7;
+  outline: none;
+}
+.total {
+  font-family: "Bebas Neue";
+  font-size: 26px;
+  color: #3488a8;
+  padding: 25px 0 15px 0;
+}
+.us {
+  font-size: 12px;
+}
+.upper {
+  color: #787878;
+}
+button {
+  border-radius: 20px;
+  width: 150px;
+  padding: 10px;
+  color: #fff;
+  background-color: #33a845;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+#plan {
+  color: #3d8eac;
+  padding: 30px;
+}

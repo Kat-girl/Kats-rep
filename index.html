@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <title>License Plan</title>
+  </head>
+  <body>
+    <form method="POST">
+      <div class="rating-container">
+        <input
+          type="radio"
+          id="radio1"
+          class="input"
+          name="license"
+          value="13"
+        />
+        <div class="radio"></div>
+        <div class="blue-circle"></div>
+        <label for="radio1" class="plan"
+          ><span class="label">license plan #1</span>
+          <span><small>$13 per license</small></span></label
+        >
+      </div>
+      <div class="rating-container">
+        <input
+          type="radio"
+          id="radio2"
+          class="input"
+          name="license"
+          value="22"
+        />
+        <div class="radio"></div>
+        <div class="blue-circle"></div>
+        <label for="radio2" class="plan"
+          ><span class="label">license plan #2</span>
+          <span><small>$22 per license</small></span></label
+        >
+      </div>
+      <div class="rating-container">
+        <input
+          type="radio"
+          id="radio3"
+          class="input"
+          name="license"
+          value="34"
+        />
+        <div class="radio"></div>
+        <div class="blue-circle"></div>
+        <label for="radio3" class="plan"
+          ><span class="label">license plan #3</span>
+          <span><small>$34 per license</small></span></label
+        >
+      </div>
+      <div class="number">
+        <small>Number of licenses</small>
+        <select name="number" id="num">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="total"></div>
+      <button type="submit">buy now</button>
+      <div id="plan"></div>
+    </form>
+  </body>
+</html>
